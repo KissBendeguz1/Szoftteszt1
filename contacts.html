@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+        <source><script src="./js/LoadAllProducts.js"></script></source>
+              <source><script src="./js/FillLocalStorage.js"></script></source>
+ <body onload="FillLocalStorage()">
+    <section>
+      <nav>
+        <a href="./index.html"
+          ><div class="navLogo">
+            <img
+              src="./assets/ChatGPT_Image_Dec_15__2025__03_10_50_PM-removebg-preview.png"
+              alt=""
+            />
+            <h3>GreenNest Shop</h3>
+          </div></a
+        >
+        <div>
+          <a href="./products.html" class="navButton">Termékek</a>
+          <a href="./contacts.html" class="navButton">Kapcsolat</a>
+        </div>
+      </nav>
+    </section>
+    <section id="contact">
+      <div class="contactContainer">
+        <div class="contactCard">
+          <h1>Kapcsolat</h1>
+          <p><strong>Cégnév:</strong> GreenNest Shop Kft.</p>
+          <p><strong>Székhely:</strong> 1117 Budapest, Zöld utca 12.</p>
+          <p><strong>E-mail:</strong> <a href="mailto:info@greennestshop.hu">info@greennestshop.hu</a></p>
+          <p><strong>Telefonszám:</strong> <a href="tel:+36301234567">+36 30 123 4567</a></p>
+          <p><strong>Weboldal:</strong> <a href="https://www.greennestshop.hu" target="_blank" rel="noopener">www.greennestshop.hu</a></p>
+        </div>
+
+        <div class="contactCard support">
+          <h2>Ügyfélszolgálat</h2>
+          <p>Hétfő–Péntek: 9:00 – 17:00</p>
+          <p class="muted">Várjuk megkeresését e-mailben vagy telefonon.</p>
+        </div>
+      </div>
+    </section>
+
+
+    </section>
+    <section id="footer">
+      <img
+        src="./assets/ChatGPT_Image_Dec_15__2025__03_05_21_PM-removebg-preview.png"
+        alt=""
+      />
+      <div>
+        <a href="./products.html" class="navButton">Termékek</a>
+        <a href="./contacts.html" class="navButton">Kapcsolat</a>
+      </div>
+    </section>
+  </body>
+    <script>
+    LoadTopProducts();
+  </script>
+</html>
