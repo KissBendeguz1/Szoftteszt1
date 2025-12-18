@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+        <source><script src="./js/LoadAllProducts.js"></script></source>
+              <source><script src="./js/FillLocalStorage.js"></script></source>
+              <source><script src="./js/deletemodify.js"></script></source>
+ <body onload="FillLocalStorage()">
+    <section>
+      <nav>
+        <a href="./index.html"
+          ><div class="navLogo">
+            <img
+              src="./assets/ChatGPT_Image_Dec_15__2025__03_10_50_PM-removebg-preview.png"
+              alt=""
+            />
+            <h3>GreenNest Shop</h3>
+          </div></a
+        >
+        <div>
+          <a href="./products.html" class="navButton">Termékek</a>
+          <a href="./contacts.html" class="navButton">Kapcsolat</a>
+        </div>
+      </nav>
+    </section>
+    <section  id="modifyBannerContainer" style="display: none;">
+    <section id="modifyBanner" >
+        <input type="text" id="ModifyProductName" placeholder="Termék név" />
+        <input type="text" id="ModifyProductDescription" placeholder="Termék leírás" />
+        <input type="number" id="ModifyProductPrice" placeholder="Termék ár" />
+        <input type="file" accept="jpg img" id="ModifyProductImage" placeholder="Kép URL" />
+        <button id="modifyButton">Módosítás</button>
+        <button id="modifyClose" onclick="closeModifyBanner()">Mégse</button>
+    </section>
+
+      </div>
+    </section>
+    <section id="Products">
+      <div class="cardContainer" id="cardContainer">
+
+      </div>
+    </section>
+    <section id="footer">
+      <img
+        src="./assets/ChatGPT_Image_Dec_15__2025__03_05_21_PM-removebg-preview.png"
+        alt=""
+      />
+      <div>
+        <a href="./products.html" class="navButton">Termékek</a>
+        <a href="./contacts.html" class="navButton">Kapcsolat</a>
+      </div>
+    </section>
+  </body>
+    <script>
+    LoadTopProducts();
+  </script>
+</html>
